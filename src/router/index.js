@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import store from "../store/";
 
-import Home from "../views/Home.vue";
+import Home from "../pages/Home.vue";
 
 Vue.use(VueRouter);
 
@@ -21,7 +21,7 @@ const routes = [
     meta: {
       forLoggedUser: true
     },
-    component: () => import("../views/About.vue")
+    component: () => import("../pages/About.vue")
   },
   {
     path: "/login",
@@ -29,7 +29,7 @@ const routes = [
     meta: {
       forLoggedUser: false
     },
-    component: () => import("../views/Login.vue")
+    component: () => import("../pages/Login.vue")
   },
   {
     path: "/register",
@@ -37,7 +37,7 @@ const routes = [
     meta: {
       forLoggedUser: false
     },
-    component: () => import("../views/Register.vue")
+    component: () => import("../pages/Register.vue")
   }
 ];
 

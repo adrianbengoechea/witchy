@@ -1,4 +1,6 @@
-# weather
+# Wytchy Proyect
+
+this is an personal proyect 
 
 ## Project setup
 ```

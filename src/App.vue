@@ -3,41 +3,24 @@
     <div class="wrapper">
       <Nav />
       <router-view />
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-import Nav from "./components/Nav.vue";
+import Nav from "./components/layout/Nav.vue";
+import Footer from "./components/layout/Footer.vue";
 
 export default {
   components: {
-    Nav
+    Nav, Footer
   }
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  min-height: 200vh;
-  margin-top: 140px;
-}
+<style lang="scss"> 
 
-#nav {
-  padding: 30px;
+@import "./assets/scss/__global.scss";
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

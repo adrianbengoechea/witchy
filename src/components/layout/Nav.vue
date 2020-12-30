@@ -53,14 +53,15 @@ export default {
 }
 .navbar#mainNavbar,
 .navbar#mainNavbarFixedAnimation {
-  padding-bottom: 30px;
+  padding-bottom: 13px;
   background: #fff;
   transition: all 0.3s ease;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
   .navbar-brand,
   .navbar-brand-alt {
     font-weight: 800;
     text-decoration: none;
-    color: #6600ff;
+    color: #5200cc;
     font-size: 40px;
     opacity: 0.9;
     transition: all 0.3s ease;
@@ -79,6 +80,7 @@ export default {
     opacity: 0;
     visibility: hidden;
   }
+
   #navbar {
     margin-top: 0;
     width: calc(100% - 300px);

@@ -12,7 +12,7 @@ export default new Vuex.Store({
   modules: {},
   getters: {
     authUser(state) {
-      return (Object.keys(state.user).length != 0 && state.user != null) ? true : false;
+      return (state.user != null && Object.keys(state.user).length != 0) ? true : false;
     }
   }
 });
